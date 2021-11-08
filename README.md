@@ -38,7 +38,7 @@ HTML
 -   Horizontal rule, another empty tag
 -   Just a simple horizontal line in place
 -   Empty tags can be a self closing tag
--   For example, <hr> can also be written as <hr />
+-   For example, &lt;hr> can also be written as &lt;hr />
 
 ## Attributes of an element
 
