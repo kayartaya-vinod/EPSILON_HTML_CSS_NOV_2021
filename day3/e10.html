@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <b>Forms</b> demo
+        <hr />
+        <div>This is a sample HTML document to learn about HTML forms.</div>
+        <div>
+            There are many form elements that can be used to create interactive
+            websites.
+        </div>
+
+        <p>
+            This is an example of a single line textbox:
+            <input type="text" placeholder="enter your name here.." />
+        </p>
+
+        <p>
+            This is an example of a single line password box:
+            <input type="password" placeholder="enter your secret key..." />
+        </p>
+
+        <p>
+            This is an example of multi select checkboxes: <br />
+            What are the language you can understand?
+
+            <label>
+                <input name="lang" value="english" type="checkbox" /> English
+            </label>
+
+            <input name="lang" value="french" type="checkbox" id="lang_fr" />
+            <label for="lang_fr">French</label>
+
+            <input name="lang" value="chinese" type="checkbox" /> Chinese
+            <input name="lang" value="japanese" type="checkbox" /> Japanese
+        </p>
+
+        <p>
+            This is an example of single select radio buttons <br />
+            Select your gender:
+
+            <input type="radio" name="gender" value="M" id="radio1" />
+            <label for="radio1">Male</label>
+
+            <input type="radio" name="gender" value="F" id="radio2" />
+            <label for="radio2">Female</label>
+
+            <label>
+                <input type="radio" name="gender" value="O" />
+                Other
+            </label>
+        </p>
+
+        <p>
+            HTML number input:
+            <input type="number" min="-10" max="10" value="5" />
+        </p>
+
+        <p>
+            HTML telephone input:
+            <input type="tel" />
+        </p>
+
+        <p>
+            HTML search input:
+            <input type="search" />
+        </p>
+
+        <p>
+            HTML email input:
+            <input type="email" />
+        </p>
+
+        <p>
+            HTML web url input:
+            <input type="url" />
+        </p>
+
+        <p>
+            <!-- unlike a regular image using img tag, this one is used for submitting form data to the server -->
+            HTML image input:
+            <input
+                type="image"
+                src="../assets/images/submit.png"
+                alt="Please submit"
+                width="50"
+                height="50"
+            />
+        </p>
+
+        <p>
+            HTML Date, month, time inputs: <br /><br />
+            Date: <input type="date" /> <br />
+            Time: <input type="time" /> Month: <input type="month" /> <br />
+            Week: <input type="week" /> <br />
+        </p>
+
+        <p>
+            This is hidden html element:
+            <input type="hidden" name="created_by" value="vinod" />
+        </p>
+
+        <p>
+            This is a multiline textbox:
+            <br>
+            <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <!-- if size=1 and witout multiple, it becomes a dropdown -->
+            This is an example of single/multi select dropdown box: <br>
+            <select name="country" id="country" size="10" multiple>
+                <option value="IN">India</option>
+                <option value="USA">United States of America</option>
+                <option value="CH">China</option>
+                <option value="JA">Japan</option>
+            </select>
+        </p>
+
+        <p>
+            Dropdown with groups: <br>
+
+            <select name="country" id="country" >
+                <option>--SELECT--</option>
+                <optgroup label="Asia">
+                    <option>India</option>
+                    <option>China</option>
+                    <option>Bangaldesh</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                    <option>England</option>
+                    <option>France</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            HTML color input:
+            <br>
+            Choose your favorite background color: 
+            <input type="color" name="bgcolor" id="bgcolor" value="#e6a010">
+        </p>
+
+        <p>
+            HTML range input:
+
+            <br>
+            Red: <input type="range" name="red" id="red" min="0" max="255" value="120"> <br>
+            Green: <input type="range" name="green" id="green" min="0" max="255" value="120"> <br>
+            Blue: <input type="range" name="blue" id="blue" min="0" max="255" value="120"> <br>
+        </p>
+
+        <br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
