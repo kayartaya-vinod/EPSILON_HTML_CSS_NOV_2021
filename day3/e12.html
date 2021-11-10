@@ -2,10 +2,58 @@
 <html lang="en">
     <head>
         <title>CSS Pseudo-element selectors</title>
+
+        <style>
+            p::first-line {
+                color: blue;
+            }
+
+            p#para1::first-letter {
+                font-size: 2.5em;
+                background-color: aqua;
+            }
+
+            p#para1::selection {
+                background-color: pink;
+                color: red;
+                font-weight: bold;
+            }
+
+            p#para2::selection {
+                background-color: yellow;
+                color: red;
+            }
+
+            p#para3::selection {
+                background-color: lime;
+                color: darkgreen;
+            }
+
+            h1::before {
+                content: url(http://lorempixel.com/75/75/animals/1);
+            }
+            h1::after {
+                content: url(http://lorempixel.com/75/75/nature/2);
+            }
+
+            ::marker {
+                font-size: 1.5em;
+                color: blue;
+            }
+        </style>
     </head>
     <body>
         <h1>CSS Pseudo-element selectors</h1>
         <h2>NOTE: Use double colon for pseudo-element selectors</h2>
+
+        <!-- ul>li{list item $}*5 -->
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            <li>list item 4</li>
+            <li>list item 5</li>
+        </ul>
 
         <p id="para1">
             The lion (Panthera leo) is a large cat of the genus Panthera native
@@ -46,5 +94,17 @@
             in virtually all ancient and medieval cultures in the lion's
             historic and current range.
         </p>
+
+        <div id="para4">
+            One of the most widely recognised animal symbols in human culture,
+            the lion has been extensively depicted in sculptures and paintings,
+            on national flags, and in contemporary films and literature. Lions
+            have been kept in menageries since the time of the Roman Empire and
+            have been a key species sought for exhibition in zoological gardens
+            across the world since the late 18th century. Cultural depictions of
+            lions were prominent in Ancient Egypt, and depictions have occurred
+            in virtually all ancient and medieval cultures in the lion's
+            historic and current range.
+        </div>
     </body>
 </html>

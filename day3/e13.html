@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS class selectors</title>
+
+        <style>
+            /* define a css class using the dot prefix */
+            .box {
+                width: 150px;
+                height: 150px;
+                margin: 0 0 2px;
+                border-top: 5px solid black;
+                border-right: 5px solid red;
+                border-bottom: 5px solid green;
+                border-left: 5px solid blue;
+                display: inline-block;
+            }
+
+            div#d1 {
+                border-radius: 10px;
+            }
+
+            div#d2 {
+                border-top-left-radius: 0;
+                border-top-right-radius: 25%;
+                border-bottom-right-radius: 50%;
+                border-bottom-left-radius: 75%;
+            }
+
+            div#d3 {
+                border-radius: 50%;
+            }
+
+            div#d4 {
+                background-image: url(https://lorempixel.com/100/100/sports/1);
+            }
+
+            div#d5 {
+                background-image: url(https://lorempixel.com/100/100/sports/1);
+                background-repeat: repeat-x;
+            }
+            
+            div#d6 {
+                background-image: url(https://lorempixel.com/100/100/sports/1);
+                background-repeat: repeat-y;
+            }
+            
+            div#d7 {
+                background-image: url(https://lorempixel.com/100/100/sports/1);
+                background-repeat: no-repeat;
+            }
+            
+            div#d8 {
+                background-image: url(https://lorempixel.com/100/100/sports/1);
+                background-repeat: no-repeat;
+                background-size: 150px;
+            }
+            
+            div#d9 {
+                width: 200px;
+                height: 200px;
+                background-image: url(https://lorempixel.com/50/100/sports/1);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+            div#d10 {
+                width: 200px;
+                height: 200px;
+                background-image: url(https://lorempixel.com/50/100/sports/1);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS class selectors</h1>
+        <hr />
+
+        <div id="d1" class="box"></div>
+        <div id="d2" class="box"></div>
+        <div id="d3" class="box"></div>
+        <div id="d4" class="box"></div>
+        <div id="d5" class="box"></div>
+        <div id="d6" class="box"></div>
+        <div id="d7" class="box"></div>
+        <div id="d8" class="box"></div>
+        <div id="d9" class="box"></div>
+        <div id="d10" class="box"></div>
+    </body>
+</html>
