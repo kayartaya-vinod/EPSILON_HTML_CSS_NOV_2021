@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Z-Index property</title>
+        <link rel="stylesheet" href="./default.css" />
+
+        <style>
+            img.img-thumnail {
+                width: 400px;
+                border-radius: 10px;
+                box-shadow: 3px 3px 20px #000;
+                border-style: groove;
+            }
+
+            #img1 {
+                position: relative;
+                top: 100px;
+                z-index: 15;
+            }
+            #img2 {
+                position: relative;
+                left: 100px;
+                z-index: 20;
+                opacity: 0.7;
+            }
+            #img3 {
+                position: absolute;
+                top: 300px;
+                left: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CSS Z-Index property</h1>
+
+            <img
+                id="img1"
+                class="img-thumnail"
+                src="../assets/images/costume.jpeg"
+                alt="costume"
+            />
+
+            <img
+                id="img2"
+                class="img-thumnail"
+                src="../assets/images/opel.jpeg"
+                alt="costume"
+            />
+
+            <img
+                id="img3"
+                class="img-thumnail"
+                src="../assets/images/shells.jpeg"
+                alt="costume"
+            />
+        </div>
+    </body>
+</html>

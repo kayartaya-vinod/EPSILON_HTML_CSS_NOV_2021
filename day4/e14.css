@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+    text-indent: 1cm;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+p#p1 {
+    color: #f58308;
+}
+
+.decorate {
+    text-decoration: underline;
+}
+
+p#p2 {
+    letter-spacing: 3px;
+}
+
+p#p3 {
+    word-spacing: 4px;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+h1#heading1 {
+    text-shadow: 2px 2px #aaa;
+}
+
+h1#heading2 {
+    text-shadow: -2px -2px 3px #f00;
+}
+
+h1#heading3 {
+    text-shadow: 0 0 5px yellow;
+}
+
+h1#heading4 {
+    text-shadow: 0 0 7px yellow, 0 0 3px red;
+    font-size: 70pt;
+}

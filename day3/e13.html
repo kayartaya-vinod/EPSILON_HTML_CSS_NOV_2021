@@ -14,6 +14,7 @@
                 border-bottom: 5px solid green;
                 border-left: 5px solid blue;
                 display: inline-block;
+                padding: 15px;
             }
 
             div#d1 {
@@ -77,12 +78,19 @@
                 height: 200px;
                 overflow: scroll;
             }
+
+            img.img-rounded {
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                border-style: dashed;
+                border-color: red;
+            }
         </style>
     </head>
     <body>
         <h1>CSS class selectors</h1>
         <hr />
-
         <div id="d1" class="box"></div>
         <div id="d2" class="box"></div>
         <div id="d3" class="box"></div>
@@ -93,7 +101,6 @@
         <div id="d8" class="box"></div>
         <div id="d9" class="box"></div>
         <div id="d10" class="box"></div>
-
         <div id="d11" class="box">
             The lion (Panthera leo) is a large cat of the genus Panthera native
             to Africa and India. It has a muscular, deep-chested body, short,
@@ -106,5 +113,11 @@
             predator; although some lions scavenge when opportunities occur and
             have been known to hunt humans, the species typically does not.
         </div>
+
+        <img
+            src="../assets/images/opel.jpeg"
+            alt="beutiful red opel car"
+            class="img-rounded"
+        />
     </body>
 </html>

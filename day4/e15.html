@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS on lists</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            .container {
+                margin: 0 auto;
+                width: 900px;
+            }
+
+            ul#list1 {
+                width: 250px;
+                list-style: none;
+                padding: 0;
+            }
+
+            ul#list1 > li {
+                border-bottom: 1px solid #aaa;
+                border-left: 1px solid #aaa;
+                border-right: 1px solid #aaa;
+                padding: 5px;
+            }
+
+            ul#list1 > li:first-child {
+                border-top: 1px solid #aaa;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            ul#list1 > li:last-child {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            ul.list-group {
+                padding: 0;
+                width: 250px;
+                list-style-image: url(http://lorempixel.com/10/10/nature/3);
+                list-style-position: inside;
+            }
+            ul.list-group > li {
+                padding: 5px;
+                border-bottom: 1px solid #aaa;
+                border-left: 1px solid #aaa;
+                border-right: 1px solid #aaa;
+            }
+            ul.list-group > li:first-child {
+                border-top: 1px solid #aaa;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CSS on lists</h1>
+            <hr />
+
+            <!-- ul#list1>li{List item $}*4 -->
+            <ul id="list1">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+                <li>List item 5</li>
+            </ul>
+
+            <ul class="list-group">
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+                <li>List item 5</li>
+            </ul>
+        </div>
+    </body>
+</html>
